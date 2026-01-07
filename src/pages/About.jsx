@@ -228,17 +228,6 @@ export default function HeroAboutSection() {
           </div>
         </motion.div>
       </div>
-
-      {/* Scroll Arrow */}
-      <motion.div
-        onClick={scrollNext}
-        animate={{ y: [0, 12, 0] }}
-        transition={{ repeat: Infinity, duration: 1.5 }}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 text-3xl cursor-pointer"
-        style={{ color: themeColor, textShadow: `0 0 12px ${themeColor}` }}
-      >
-        ↓
-      </motion.div>
     </div>
   );
 }
