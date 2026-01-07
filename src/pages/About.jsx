@@ -137,7 +137,10 @@ export default function HeroAboutSection() {
             key={i}
             className="absolute w-1 h-1 rounded-full"
             style={{ backgroundColor: themeColor }}
-            initial={{ x: Math.random() * window.innerWidth, y: Math.random() * window.innerHeight }}
+            initial={{
+              x: Math.random() * window.innerWidth,
+              y: Math.random() * window.innerHeight,
+            }}
             animate={{ y: [0, -30, 30], opacity: [0.2, 0.6, 0.2] }}
             transition={{ duration: 6 + Math.random() * 4, repeat: Infinity }}
           />
@@ -169,25 +172,37 @@ export default function HeroAboutSection() {
           className="flex-1 space-y-4 text-center md:text-left text-xl font-sans"
         >
           <div className="text-4xl md:text-5xl font-extrabold">
-            <TypingText text="👋 About Me" speed={isMobile ? 40 : 80} color={themeColor} />
+            <TypingText
+              text="👋 About Me"
+              speed={isMobile ? 40 : 80}
+              color={themeColor}
+            />
           </div>
           <p className="opacity-90">
             <SplitText
-              text="I specialize in React, frameworks, and front-end development."
+              text="I Specialize in React, Frameworks, and Front-end Development."
               reduced={reduced}
               color={themeColor}
             />
           </p>
           <p className="opacity-90">
-            <SplitText text="Outside of coding, ❤️ I enjoy continuous learning and" reduced={reduced} color={themeColor} />
+            <SplitText
+              text="Outside of coding, ❤️ I enjoy continuous Learning and"
+              reduced={reduced}
+              color={themeColor}
+            />
           </p>
           <p className="opacity-90">
-            <SplitText text="knowledge to inspire others." reduced={reduced} color={themeColor} />
+            <SplitText
+              text="Knowledge to Inspire others."
+              reduced={reduced}
+              color={themeColor}
+            />
           </p>
 
           <div className="flex flex-col md:flex-row gap-4 mt-6 justify-center md:justify-start">
             <a
-              href="https://github.com/YourGitHub"
+              href="https://github.com/BenjaminKing0520"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-5 py-3 rounded-full bg-gray-800 text-white hover:bg-gray-700 transition"
@@ -203,7 +218,7 @@ export default function HeroAboutSection() {
               <FaLinkedin /> LinkedIn
             </a>
             <a
-              href="https://wa.me/YourWhatsAppNumber"
+              href="https://wa.me/+94755391504"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-5 py-3 rounded-full bg-green-600 text-white hover:bg-green-500 transition"
