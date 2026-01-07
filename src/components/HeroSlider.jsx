@@ -230,19 +230,21 @@ export default function HeroSection() {
               color={themeColor}
             />
           </p>
-          {/* Download CV Button (NO COUNTER) */}
-          <motion.button
-            onClick={() => window.open("/My CV.pdf", "_blank")}
+
+          {/* Mobile & Desktop SAFE Download CV Button */}
+          <motion.a
+            href="/My CV.pdf"
+            download="RohanBenjamin_CV.pdf"
             whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
             style={{
               backgroundColor: themeColor,
               boxShadow: `0 0 25px ${themeColor}`,
             }}
-            className="mt-6 px-6 py-3 rounded-full font-semibold text-black"
+            className="mt-6 px-6 py-3 rounded-full font-semibold text-black inline-block text-center"
           >
             ⬇️ Download CV
-          </motion.button>
+          </motion.a>
         </motion.div>
 
         {/* IMAGE: 3D TILT + BEAT */}
