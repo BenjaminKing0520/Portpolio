@@ -231,34 +231,22 @@ export default function HeroSection() {
             />
           </p>
 
-          {/* ---------- MOBILE + DESKTOP SAFE CV BUTTON ---------- */}
-          <motion.button
-            onClick={async () => {
-              try {
-                const response = await fetch("/My CV.pdf");
-                const blob = await response.blob();
-                const url = window.URL.createObjectURL(blob);
-                const link = document.createElement("a");
-                link.href = url;
-                link.download = "RohanBenjamin_CV.pdf";
-                document.body.appendChild(link);
-                link.click();
-                link.remove();
-                window.URL.revokeObjectURL(url);
-              } catch (err) {
-                console.error("Failed to download CV:", err);
-              }
-            }}
-            whileHover={{ scale: 1.08 }}
-            whileTap={{ scale: 0.95 }}
+          {/* ---------- MOBILE + DESKTOP SAFE CV DOWNLOAD BUTTON ---------- */}
+          <motion.a
+            href="/My CV.pdf"
+            download="RohanBenjamin_CV.pdf"
+            className="mt-6 px-6 py-3 rounded-full font-semibold text-black inline-block"
             style={{
               backgroundColor: themeColor,
               boxShadow: `0 0 25px ${themeColor}`,
             }}
-            className="mt-6 px-6 py-3 rounded-full font-semibold text-black"
+            whileHover={{ scale: 1.08 }}
+            whileTap={{ scale: 0.95 }}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             ⬇️ Download CV
-          </motion.button>
+          </motion.a>
         </motion.div>
 
         {/* IMAGE: 3D TILT + BEAT */}
