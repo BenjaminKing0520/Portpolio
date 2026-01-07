@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes runText {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+@keyframes textMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 20px #41C715; opacity: 0.5; }
+  50% { box-shadow: 0 0 40px #7EFF3D; opacity: 1; }
+}
+
+.animate-textMove {
+  background-size: 200% 200%;
+  animation: textMove 4s linear infinite;
+}
+.animate-runText {
+  display: inline-block;
+  animation: runText 5s linear infinite;
+}
+.animate-pulseGlow {
+  animation: pulseGlow 2s infinite;
+}
+
+  
+  
