@@ -187,14 +187,14 @@ export default function HeroAboutSection() {
           </p>
           <p className="opacity-90">
             <SplitText
-              text="Outside of coding, ❤️ I enjoy continuous Learning and"
+              text="Outside of coding, ❤️ I Enjoy Continuous Learning and"
               reduced={reduced}
               color={themeColor}
             />
           </p>
           <p className="opacity-90">
             <SplitText
-              text="Knowledge to Inspire others."
+              text="Knowledge to Inspire Others."
               reduced={reduced}
               color={themeColor}
             />
