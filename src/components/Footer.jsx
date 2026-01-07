@@ -46,11 +46,10 @@ export default function Footer() {
 
   // Social links
   const socialLinks = [
-    { icon: FaFacebook, url: "https://www.facebook.com/yourprofile" },
+    { icon: FaFacebook, url: "https://www.facebook.com/share/17vLoetNB2/" },
     { icon: FaLinkedin, url: "https://www.linkedin.com/in/yourprofile" },
-    { icon: FaInstagram, url: "https://www.instagram.com/yourprofile" },
-    { icon: FaWhatsapp, url: "https://wa.me/yourphonenumber" },
-    { icon: FaPhoneAlt, url: "tel:+1234567890" },
+    { icon: FaWhatsapp, url: "https://wa.me/+94755391504" },
+    { icon: FaPhoneAlt, url: "tel:+94755391504" },
   ];
 
   return (
