@@ -231,32 +231,35 @@ export default function HeroSection() {
             />
           </p>
 
-          {/* Mobile & Desktop SAFE Download CV Button */}
-         <motion.button
-          onClick={async () => {
+          {/* ---------- MOBILE + DESKTOP SAFE CV BUTTON ---------- */}
+          <motion.button
+            onClick={async () => {
               try {
-                 const response = await fetch("/My CV.pdf");
-                 const blob = await response.blob();
-                 const url = window.URL.createObjectURL(blob);
-                 const link = document.createElement("a");
-                  link.href = url;
-                  link.download = "RohanBenjamin_CV.pdf"; // filename
-                  document.body.appendChild(link);
-                 link.click();
-                 link.remove();
-                  window.URL.revokeObjectURL(url);
-               } catch (err) {
-                 console.error("Failed to download CV:", err);
-               }
-              }}
-               whileHover={{ scale: 1.08 }}
-              whileTap={{ scale: 0.95 }}
-               style={{ backgroundColor: themeColor, boxShadow: `0 0 25px ${themeColor}` }}
-              className="mt-6 px-6 py-3 rounded-full font-semibold text-black"
-            >
-              ⬇️ Download CV
-            </motion.button>
-
+                const response = await fetch("/My CV.pdf");
+                const blob = await response.blob();
+                const url = window.URL.createObjectURL(blob);
+                const link = document.createElement("a");
+                link.href = url;
+                link.download = "RohanBenjamin_CV.pdf";
+                document.body.appendChild(link);
+                link.click();
+                link.remove();
+                window.URL.revokeObjectURL(url);
+              } catch (err) {
+                console.error("Failed to download CV:", err);
+              }
+            }}
+            whileHover={{ scale: 1.08 }}
+            whileTap={{ scale: 0.95 }}
+            style={{
+              backgroundColor: themeColor,
+              boxShadow: `0 0 25px ${themeColor}`,
+            }}
+            className="mt-6 px-6 py-3 rounded-full font-semibold text-black"
+          >
+            ⬇️ Download CV
+          </motion.button>
+        </motion.div>
 
         {/* IMAGE: 3D TILT + BEAT */}
         <motion.div
