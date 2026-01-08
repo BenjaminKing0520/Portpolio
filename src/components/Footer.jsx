@@ -47,7 +47,10 @@ export default function Footer() {
   // Social links
   const socialLinks = [
     { icon: FaFacebook, url: "https://www.facebook.com/share/17vLoetNB2/" },
-    { icon: FaLinkedin, url: "https://www.linkedin.com/in/yourprofile" },
+    {
+      icon: FaLinkedin,
+      url: "https://www.linkedin.com/in/rohan-benjamin-708909289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
     { icon: FaWhatsapp, url: "https://wa.me/+94755391504" },
     { icon: FaPhoneAlt, url: "tel:+94755391504" },
   ];

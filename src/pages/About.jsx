@@ -210,7 +210,7 @@ export default function HeroAboutSection() {
               <FaGithub /> GitHub
             </a>
             <a
-              href="https://linkedin.com/in/YourLinkedIn"
+              href="https://www.linkedin.com/in/rohan-benjamin-708909289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-5 py-3 rounded-full bg-blue-600 text-white hover:bg-blue-500 transition"
