@@ -1,6 +1,5 @@
 import {
   FaFacebook,
-  FaInstagram,
   FaWhatsapp,
   FaPhoneAlt,
   FaLinkedin,
@@ -14,7 +13,7 @@ export default function Footer() {
   const [typed, setTyped] = useState("");
   const [theme, setTheme] = useState("green"); // 🌈 Theme toggle
 
-  const text = `© ${new Date().getFullYear()} MyPortfolio. All Rights Reserved.`;
+  const text = `© ${new Date().getFullYear()} S.Rohanbenjamin. All Rights Reserved.`;
 
   useEffect(() => {
     let i = 0;
