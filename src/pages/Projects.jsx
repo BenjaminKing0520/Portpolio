@@ -9,7 +9,7 @@ const projects = [
     description:
       "Java desktop application to manage blood donors, inventory, and reports.",
     tech: ["Java", "MySQL", "Swing"],
-    image: "/projects/bloodbank.png",
+    image: "/BloodBank.png",
     github: "https://github.com/BenjaminKing0520/BloodBankSystem.git",
     category: "Desktop App",
   },
@@ -18,8 +18,8 @@ const projects = [
     description:
       "Modern React website showcasing courses, events, and academy content.",
     tech: ["React", "Tailwind CSS"],
-    image: "/projects/HakeemArt.png",
-    github: "#",
+    image: "/HakeemArt.png",
+    github: "https://github.com/BenjaminKing0520/Hakeem-Art-Academy.git",
     demo: "https://hakeem-art-academy.vercel.app/",
     category: "Web App",
   },
@@ -27,7 +27,7 @@ const projects = [
     title: "Car Booking Web App",
     description: "Car rental and booking system using PHP and MySQL backend.",
     tech: ["HTML", "CSS", "PHP", "MySQL"],
-    image: "/projects/CarReant.png",
+    image: "/CarReant.png",
     github: "https://github.com/BenjaminKing0520/Ruzaik-rent-car.git",
     category: "Web App",
   },
