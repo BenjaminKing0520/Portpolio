@@ -221,7 +221,7 @@ export default function HeroAboutSection() {
               href="https://wa.me/+94755391504"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-5 py-3 rounded-full bg-green-600 text-white hover:bg-green-500 transition"
+              className="flex items-center gap-2 px-5 py-3 rounded-full bg-green-700 text-white hover:bg-green-600 transition"
             >
               <FaWhatsapp /> WhatsApp
             </a>
